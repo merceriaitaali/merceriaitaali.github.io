@@ -1,0 +1,40 @@
+
+body {
+    background: #ffffff;
+    background-color: #ffffff;
+  }
+  
+  .glassmorphism {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(50px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+    color: rgb(0, 0, 0);
+  }
+  
+  a {
+    color: #199ae6;
+  }
+  
+  a:hover {
+    color: #113f64;
+  }
+
+  .hero-section {
+    background: url('../img/yarn.jpg') no-repeat center center;
+    background-size: cover;
+    height: 100vh; /* Ocupa toda la altura de la pantalla */
+    position: relative;
+    z-index: 1;
+  }
+  
+  /* Opcional: capa oscura encima para mejorar contraste del texto */
+  .hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4); /* Oscurece el fondo */
+    z-index: -1;
+  }
+  
